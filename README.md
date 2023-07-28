@@ -1,3 +1,3 @@
 # Serda Store
 
-Ini adalah repositori stok barang
+Ini adalah repositori untuk website stok barang
