@@ -96,7 +96,7 @@ Sistem Informasi Barang Serba Store adalah sebuah aplikasi berbasis web yang ber
 
 ## Desain Website
 
-Desain yang telah dibuat dapat di cek pada [link desain](https://www.figma.com/file/KGJHzDVG4E3Zk1seG7tM9g/Untitled?type=design&mode=design&t=i1OiKFOdNh0iOFEt-0)
+Desain yang telah dibuat dapat di cek pada [link desain](https://www.figma.com/file/KGJHzDVG4E3Zk1seG7tM9g/Untitled?type=design&node-id=1%3A31&mode=design&t=6rJTa53aNG1JFsHh-1)
 
 ## Tanggung Jawab Tim
 
