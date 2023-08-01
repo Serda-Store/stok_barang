@@ -83,3 +83,7 @@ _Fungsi Halaman Barang Masuk_
 - Memantau Persediaan Barang: Dengan mencatat transaksi keluar, sistem akan secara otomatis memperbarui stok barang di gudang, sehingga pengguna dapat memantau persediaan dan menghindari kekurangan stok.
 - Mencari Transaksi Keluar: Fitur pencarian memungkinkan pengguna untuk mencari transaksi keluar berdasarkan kriteria tertentu, sehingga pengguna dapat dengan mudah menemukan transaksi yang dibutuhkan tanpa perlu melihat seluruh daftar transaksi keluar.
 - Cetak Laporan: Dengan adanya tombol cetak laporan, pengguna dapat mencetak laporan berisi ringkasan informasi dari daftar transaksi keluar barang yang ditampilkan dalam tabel, sehingga memudahkan dalam pemantauan stok dan analisis persediaan.
+
+---
+
+Desain yang telah dibuat dapat di cek pada [link desain](https://www.figma.com/file/KGJHzDVG4E3Zk1seG7tM9g/Untitled?type=design&mode=design&t=i1OiKFOdNh0iOFEt-0)
