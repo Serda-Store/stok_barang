@@ -17,8 +17,8 @@ const login = [
   console.log();
 
   const barangMasuk = [
-      [1, 1, 20-10-2003, "masuk1", "gambar1", "pcs"],
-      [2, 2, 11-04-2002, "masuk2", "gambar2", "pcs"]
+      [1, 1, 20102003, "masuk1", "gambar1", "pcs"],
+      [2, 2, 11042002, "masuk2", "gambar2", "pcs"]
       
   ];
   console.log (barangMasuk);
@@ -26,8 +26,8 @@ const login = [
   console.log();
   
   const barangKeluar = [
-      [1, 1, 20-10-2003, "konsumen1", "gambar1", "pcs"],
-      [2, 2, 11-04-2002, "konsumen2", "gambar2", "pcs"]
+      [1, 1, 20102003, "konsumen1", "gambar1", "pcs"],
+      [2, 2, 11042002, "konsumen2", "gambar2", "pcs"]
   
   ]
   
