@@ -98,6 +98,10 @@ Sistem Informasi Barang Serba Store adalah sebuah aplikasi berbasis web yang ber
 
 Desain yang telah dibuat dapat di cek pada [link desain](https://www.figma.com/file/KGJHzDVG4E3Zk1seG7tM9g/Untitled?type=design&node-id=1%3A31&mode=design&t=6rJTa53aNG1JFsHh-1)
 
+## Desain Database
+
+Adapun desain database pada Sistem Informasi Barang (Serda Store) dapat dilihat pada [![database.png](https://i.postimg.cc/3xjfMkn0/database.png)](https://postimg.cc/LJX3L8dm)
+
 ## Tanggung Jawab Tim
 
 | Nama                           | Tanggung Jawab          | Persentase |
