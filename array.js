@@ -5,7 +5,7 @@ const login = [
   
   console.log(login);
 
-  console.log()
+  console.log();
   
   const stock = [
       [1,"pen", "ada", 100, "tersedia", "gambar1", "pcs"],
@@ -14,12 +14,16 @@ const login = [
   
   console.log (stock);
   
+  console.log();
+
   const barangMasuk = [
       [1, 1, 20-10-2003, "masuk1", "gambar1", "pcs"],
       [2, 2, 11-04-2002, "masuk2", "gambar2", "pcs"]
       
   ];
   console.log (barangMasuk);
+
+  console.log();
   
   const barangKeluar = [
       [1, 1, 20-10-2003, "konsumen1", "gambar1", "pcs"],
