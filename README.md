@@ -100,7 +100,7 @@ Desain yang telah dibuat dapat di cek pada [link desain](https://www.figma.com/f
 
 ## Desain Database
 
-Adapun desain database pada Sistem Informasi Barang (Serda Store) dapat dilihat pada [![database.png](https://i.postimg.cc/ZR7yDv0S/database.png)](https://postimg.cc/gXhJxJvS)
+Adapun desain database pada Sistem Informasi Barang (Serda Store) dapat dilihat pada [![image.png](https://i.postimg.cc/13zmJmPq/image.png)](https://postimg.cc/svtC2RMj)
 
 ## Tanggung Jawab Tim
 
