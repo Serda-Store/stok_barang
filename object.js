@@ -2,7 +2,7 @@ const login = {
   id_user: "1",
   username: "user1",
   password: "password123",
-  email: "user1@example.com",
+  
 };
 console.log(login);
 
