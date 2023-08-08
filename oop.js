@@ -1,4 +1,4 @@
-//table ser
+//table user
 class User {
   constructor(username, password) {
     this.username = username;
@@ -49,14 +49,16 @@ class StockBarang {
   
 }
 
-const stockbarang1 = new StockBarang('1', 'Pen', 'Ada', 100,'tersedia', 'pcs');
-const stockbarang2 = new StockBarang('2', 'Pencil', 'Tidak ada', 0,'tidak tersedia', 'pcs');
+const stockbarang1 = new StockBarang(1, 'Pen', 'Ada', 100,'tersedia', 'pcs');
+const stockbarang2 = new StockBarang(2, 'Pencil', 'Tidak ada', 0,'tidak tersedia', 'pcs');
  
 console.log(stockbarang1);
 console.log(stockbarang2);
  
 stockbarang1.barangBertambah();
 stockbarang2.barangBerkurang();
+
+console.log()
 
 //table Barang Masuk
 class BarangMasuk {
@@ -67,27 +69,45 @@ class BarangMasuk {
     this.keterangan = keterangan;
     this.satuan = satuan;
   }
-
+ 
   daftarBarang() {
-    console.log(
-      `${this.idmasuk} ${this.idbarang} ${this.tanggal} ${this.keterangan} ${this.satuan} barang berhasil masuk`
-    );
+    console.log(`${this.idmasuk} ${this.idbarang} ${this.tanggal} ${this.keterangan} ${this.satuan} barang berhasil masuk`);
   }
+  
 }
 
-const barangmasuk = new BarangMasuk(
-  3,
-  1,
-  "Eraser",
-  8082023,
-  "masuk 100",
-  "pcs"
-);
-
+const barangmasuk = new BarangMasuk(3, 01, 'Eraser', 08082023, 'masuk 100', 'pcs');
+ 
 console.log(barangmasuk);
 
 barangmasuk.daftarBarang();
 
-console.log();
+console.log()
 
-console.log();
+//table Barang Keluar
+
+class BarangKeluar {
+  constructor(idkeluar, idbarang, tanggal, penerima, satuan) {
+    this.idkeluar = idkeluar;
+    this.idbarang = idbarang;
+    this.tanggal = tanggal;
+    this.penerima = penerima;
+    this.satuan = satuan;
+  }
+ 
+  daftarKeluar() {
+    console.log(`${this.idkeluar} ${this.idbarang} ${this.tanggal} ${this.penerima} ${this.satuan} barang berhasil keluar`);
+  }
+  
+}
+
+const barangkeluar = new BarangKeluar(3, 01, 'Eraser', 08082023, 'konsumen', 'pcs');
+ 
+console.log(barangkeluar);
+
+barangkeluar.daftarKeluar();
+
+console.log()
+
+
+
