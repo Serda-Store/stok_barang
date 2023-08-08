@@ -104,8 +104,7 @@ Adapun desain database pada Sistem Informasi Barang (Serda Store) dapat dilihat 
 
 ## Tanggung Jawab Tim
 
-| Nama                           | Tanggung Jawab          | Persentase |
-| ------------------------------ | ----------------------- | ---------- |
-| Sri Mulyana                    | Login dan Logout        | 0%         |
-| Yolanda Ester Berliana Ritonga | Stok Barang             | 0%         |
-| Santa Falare                   | Barang Masuk dan Keluar | 0%         |
+| Nama                           | Tanggung Jawab   | Persentase |
+| ------------------------------ | ---------------- | ---------- |
+| Sri Mulyana                    | Login dan Logout | 0%         |
+| Yolanda Ester Berliana Ritonga | Stok Barang      | 0%         |
