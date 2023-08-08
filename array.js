@@ -1,6 +1,6 @@
 const login = [
-    ["user1", "password123", "user1@example.com"],
-    ["user2", "secret456", "user2@example.com"]
+    ["user1", "password123"],
+    ["user2", "secret456"]
   ];
   
   console.log(login);
