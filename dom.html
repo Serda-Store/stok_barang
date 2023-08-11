@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      label,
+      input,
+      select,
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .error {
+        color: #f00;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="role">Role:</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select a role</option>
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="mahasiswa_baru">Mahasiswa Baru</option>
+        <option value="mahasiswa_tamu">Mahasiswa Tamu</option>
+        <option value="dosen">Dosen</option>
+        <option value="dosen_tamu">Dosen Tamu</option>
+        <option value="orang_tua">Orang Tua</option>
+      </select>
+
+      <button type="button" onclick="validateLogin()">Login</button>
+    </form>
+
+    <script>
+      const validUsernames = ["Yolanda Ester", "Sri Mulyana"];
+      const validPasswords = {
+        "Yolanda Ester": "123456",
+        "Sri Mulyana": "654321",
+      };
+
+      function showError(message) {
+        alert(message);
+      }
+
+      function validateLogin() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const role = document.getElementById("role").value;
+        const validRoles = ["mahasiswa", "mahasiswa_baru", "mahasiswa_tamu", "dosen", "dosen_tamu", "orang_tua"];
+
+        if (validUsernames.includes(username) && validPasswords[username] === password) {
+          if (role === "mahasiswa") {
+            alert("Selamat, Anda berhasil login sebagai " + role + ".");
+          } else {
+            showError("Pilihan Anda salah.");
+          }
+        } else {
+          showError("Username atau password yang Anda masukkan salah.");
+        }
+      }
+    </script>
+  </body>
+</html>
