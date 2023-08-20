@@ -4,7 +4,7 @@ session_start();
 $host_db    = "localhost";
 $user_db    = "root";
 $pass_db    = "";
-$nama_db    = "login";
+$nama_db    = "serda_store";
 $koneksi    = mysqli_connect($host_db, $user_db, $pass_db, $nama_db);
 
 $err        = "";
@@ -25,7 +25,7 @@ if (isset($_COOKIE['cookie_username'])) {
 }
 
 if (isset($_SESSION['session_username'])) {
-    header("location:anggota.php");
+    header("location:stok_barang.php");
     exit();
 }
 
@@ -48,7 +48,7 @@ if (isset($_POST['login'])) {
         }
 
         if (empty($err)) {
-            $_SESSION['session_username'] = $username; //server
+            $_SESSION['session_username'] = $username;
             $_SESSION['session_password'] = md5($password);
 
             if ($ingataku == 1) {
@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
                 $cookie_time = time() + (60 * 60 * 24 * 30);
                 setcookie($cookie_name, $cookie_value, $cookie_time, "/");
             }
-            header("location:anggota.php");
+            header("location:stok_barang.php");
         }
     }
 }
