@@ -20,7 +20,7 @@ if (isset($_COOKIE['cookie_username'])) {
 }
 
 if (isset($_SESSION['session_username'])) {
-    header("location:stok_barang.php");
+    header('Location: stok/stok_barang.php');
     exit();
 }
 
@@ -57,7 +57,8 @@ if (isset($_POST['login'])) {
                 $cookie_time = time() + (60 * 60 * 24 * 30);
                 setcookie($cookie_name, $cookie_value, $cookie_time, "/");
             }
-            header("location:stok_barang.php");
+            header('Location: stok/stok_barang.php');
+            exit();
         }
     }
 }
