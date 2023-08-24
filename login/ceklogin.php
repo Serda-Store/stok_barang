@@ -10,7 +10,7 @@ if (isset($_COOKIE['cookie_username'])) {
     $cookie_username = $_COOKIE['cookie_username'];
     $cookie_password = $_COOKIE['cookie_password'];
 
-    $sql1 = "select * from login where username = '$cookie_username'";
+    $sql1 = "SELECT * FROM login WHERE username = '$cookie_username'";
     $q1   = mysqli_query($koneksi, $sql1);
     $r1   = mysqli_fetch_array($q1);
     if ($r1['password'] == $cookie_password) {
@@ -20,7 +20,7 @@ if (isset($_COOKIE['cookie_username'])) {
 }
 
 if (isset($_SESSION['session_username'])) {
-    header('Location: stok/stok_barang.php');
+    header("location: ../stok/stok_barang.php");
     exit();
 }
 
@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
     if ($username == '' or $password == '') {
         $err .= "<li>Silakan masukkan username dan juga password.</li>";
     } else {
-        $sql1 = "select * from login where username = '$username'";
+        $sql1 = "SELECT * FROM login WHERE username = '$username'";
         $q1   = mysqli_query($koneksi, $sql1);
         $r1   = mysqli_fetch_array($q1);
 
@@ -57,8 +57,9 @@ if (isset($_POST['login'])) {
                 $cookie_time = time() + (60 * 60 * 24 * 30);
                 setcookie($cookie_name, $cookie_value, $cookie_time, "/");
             }
-            header('Location: stok/stok_barang.php');
-            exit();
+            header("location: ../stok/stok_barang.php");
+        } else {
+            echo 'login gagal';
         }
     }
 }
